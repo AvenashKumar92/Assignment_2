@@ -1,26 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/lblInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+
         android:text="Input(LBs)" />
 
 
-    <TextView
-        android:id="@+id/lblOutput"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/txtInput"
-        android:layout_marginTop="2dp"
-        android:text="Output(KGs)" />
+
 
     <EditText
         android:id="@+id/txtInput"
@@ -29,6 +24,13 @@
         android:layout_below="@id/lblInput"
         android:layout_marginTop="5dp"
         android:inputType="number" />
+
+    <TextView
+        android:id="@+id/lblOutput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtInput"
+        android:text="Output(KGs)" />
 
     <EditText
         android:id="@+id/txtOutput"
@@ -49,4 +51,4 @@
         android:onClick="click"
         android:text="Convert" />
 
-</RelativeLayout>
+</LinearLayout>
